@@ -1,0 +1,8 @@
+services:
+  wobblecode_manager.document_manager:
+    class: WobbleCode\ManagerBundle\Manager\GenericDocumentManager
+    arguments:
+        - "@request_stack"
+        - "@event_dispatcher"
+        - "@doctrine.odm.mongodb.document_manager"
+        - "@knp_paginator"

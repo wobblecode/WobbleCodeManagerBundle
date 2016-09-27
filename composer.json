@@ -1,0 +1,36 @@
+{
+    "name": "wobblecode/manager-bundle",
+    "license": "MIT",
+    "type": "project",
+    "description": "Provides common features and a generic manager for documents and entities",
+    "license": "MIT",
+    "authors": [
+        {"name": "Luis Hdez", "email": "luis.munoz.hdez@gmail.com"}
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.6.*",
+        "doctrine/dbal": "<2.5",
+        "doctrine/doctrine-bundle": "~1.2",
+        "doctrine/mongodb-odm": "1.0.*@dev",
+        "doctrine/mongodb-odm-bundle": "3.0.*@dev",
+        "knplabs/knp-paginator-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/",
+            "SymfonyStandard": "app/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "WobbleCode\\ManagerBundle\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
