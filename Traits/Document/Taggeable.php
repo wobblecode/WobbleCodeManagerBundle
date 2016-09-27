@@ -7,7 +7,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 trait Taggeable
 {
     /**
-     * @MongoDB\Collection
+     * @ODM\Collection
      * @Serializer\Expose
      * @Serializer\Groups({"ui"})
      */
