@@ -221,6 +221,8 @@ class GenericDocumentManager
     /**
      * Notify Helper Create a generic event and dispatch the event
      *
+     * @todo move to WobbleCodeNotificationBundle
+     *
      * @param string $key       Event key name
      * @param array  $arguments Arguments with Organization included
      *
@@ -582,7 +584,6 @@ class GenericDocumentManager
     public function normalizeDateToMongo($date)
     {
         if ($date instanceof \DateTime) {
-
             return new \MongoDate($date->getTimestamp());
         }
 
